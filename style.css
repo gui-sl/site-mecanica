@@ -1,0 +1,474 @@
+*{
+  scroll-behavior: smooth ;
+}
+body,ul {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.line4{
+    width: 100%;
+    height: 160px;
+    background: black;
+    position: relative;
+}
+
+.logo {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: -65px;
+  }
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+a:hover {
+  transition: ease .3s;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+nav {
+  height: 30px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background: #e7e7e7;
+  justify-content: space-evenly;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+  margin-right: 100px;
+}
+
+.fa, .wrap {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 25px;
+    font-size: 20px;
+  }
+
+.fa-facebook, .fa-instagram, .fa-whatsapp, .fa-whatsapp, .fa-twitter{
+  transition: ease .3s;
+    background: #000;
+    color: rgb(247, 247, 247);
+  }
+
+.fa-facebook:hover {
+    background: #3b5998;
+    color: #ffffff;
+  }
+
+.fa-instagram:hover {
+    background: #8134AF;
+    color: white;
+    }
+
+.fa-whatsapp:hover {
+    background: #34af23;
+    color: white;
+  }
+
+.fa-twitter:hover {
+    background: #00acee;
+    color: white;
+  }
+
+.wrap{
+    width: 200px;
+    height: 40px;
+    cursor: default;
+  }
+
+#page1{
+  display: grid;
+    font-size: 25px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 90vh;
+    background: url(images/oficina-mecanica-organizada.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: change 20s infinite;
+}
+
+@keyframes change{
+  0%{
+    background-image: url(images/oficina-mecanica-organizada.jpg);
+  }
+  20%{
+    background-image: url(images/background-change);
+  }
+  40%{
+    background-image: url(images/background-change1.jpg);
+  }
+  60%{
+    background-image: url(images/background-change3);
+  }
+  80%{
+    background-image: url(images/carros.jpg);
+  }
+  100%{
+    background-image: url(images/oficina-mecanica-organizada.jpg);
+  }
+}
+
+h1{
+    width: 45%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+#corpo{
+    width: 45%;
+    padding-left: 5%;
+  } 
+
+.mask{
+    background: #000000c5;
+    height: 100%;
+  }
+
+.flyer{
+  width: 350px;
+  height: 500px;
+  background-color: #00acee;
+  float: right;
+  margin-top: -200px;
+}
+
+#flyer{
+  width: 350px;
+  height: 500px;
+  background-color: #00acee;
+  float: right;
+}
+
+#page2{
+  text-align: center;
+  color: black;
+  background-color: #e7e7e7;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 3.5vw;   
+  margin-top: -48px; 
+  justify-content: center;
+  }
+
+#titulo{
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+.serviços{
+  border-radius: 15px 15px 0px 0; 
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+  width: 500px;
+  height: 300px;
+}
+
+.wrap1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #e7e7e7;
+  }
+
+.container{
+  display: grid;
+  justify-content: center;
+  background-color: #e7e7e7;
+  }
+
+.box{
+  background: rgb(0, 0, 0);
+  margin-top: -10px;
+  margin-bottom: 60px;
+  width: 500px;
+  height: 300px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+  position: relative;
+  }
+
+.box > p{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin: 10px;
+  margin-top: 3%;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  }
+
+.line5{
+  display: flex;
+  justify-content: center;
+  width: 110px;
+  height: 7px;
+  background-color: #ffc900;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  margin-left: -305px;
+  margin-top: -230px;
+  }
+
+.info{
+  padding-top: 40px;
+  }
+
+.titulo{
+  padding-top: 50px;
+}
+
+#page3{
+  background-color: #e7e7e7;
+  margin-top: -30px;
+  font-family: sans-serif;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+h2{
+  margin-top: -10px;
+  font-size: 40px;
+}
+
+h3{
+  padding-top: 70px;
+  font-size: 20px;
+}
+
+h4{
+  margin-top: -1px;
+  margin-bottom: -1px;
+  font-size: 25px;
+}
+
+#text{
+  font-size: 20px;
+}
+
+.wrap2{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #e7e7e7;
+  flex-wrap: wrap;
+}
+
+.box2{
+  width: 400px;
+  height: 400px;
+  margin: 20px 10px 0px 10px;
+  background-color: transparent;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
+
+.box2:hover{
+  transition: ease .5s;
+  color: #fff;
+  background-color: #000;
+}
+
+#text{
+  margin: 10px 10px 10px 10px;
+}
+
+#page4 {
+  text-align: center;
+  background-color: #e7e7e7;
+  margin-top: -50px;
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+}
+
+.title{
+  padding-top: 100px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.container2{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #e7e7e7;
+  flex-wrap: wrap;
+}
+
+.box3{
+  width: 45%;
+  background-color: #e7e7e7;
+  min-width: 450px;
+}
+
+.box4{
+  width: 45%;
+  background-color: #e7e7e7;
+  min-width: 450px;
+  text-align: justify;
+  color: #000000;
+}
+
+.box4 > p{
+  margin: 0px 0px 20px 0px;
+  font-family: sans-serif;
+  font-size: 19px;
+}
+
+.mecanica{
+  width: 100%;
+  height: 300px;
+  min-width: 400px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+  border-radius: 15px;
+}
+
+#clientes{
+  align-items: center;
+  background: #e7e7e7;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+#page5{
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.wrap3{
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+  color: #ffffff;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.box5{
+  width: 400px;
+  height: 400px;
+  margin: 20px 10px 100px 10px;
+}
+
+.box5 > p {
+  margin-top: -15px;
+  font-size: 20px;
+}
+
+h6{
+  color: #ffc900;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+}
+
+footer{
+  font-family: sans-serif;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #000;
+  font-size: 11px;
+}
+
+footer > p{
+  margin: 15px 5% 0 5%; 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  background: transparent;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1000px;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, #e7e7e7 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.title2{
+  text-align: center;
+  width: 100%;
+  background-color: #e7e7e7;
+  color: #000;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 150px 0 50px 0;
+}

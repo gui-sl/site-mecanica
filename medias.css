@@ -1,0 +1,249 @@
+@media (max-width: 992px) {
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #e7e7e7;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+      margin-top: 145px;
+    }
+    nav{
+      justify-content: space-between;
+    }
+  
+    #nav.active #menu {
+      height: 250px;
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 2rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 30px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    h1{
+      width: 80%;
+      padding-left: 5%;
+      padding-top: 5%;
+  }
+    #corpo{
+      width: 80%;
+      padding-left: 5%;
+    }
+    .flyer{
+      display: none;
+    }
+
+    #flyer{
+      display: none;
+    }
+}
+  
+  @media (max-width: 600px){
+    #nav.active #menu {
+      height: 300px;
+      visibility: visible;
+      overflow-y: auto;
+    }
+  
+      a{
+        font-size: 2.9vw;
+      }
+  
+      h1{
+          width: 95%;
+          font-size: 5.9vw;
+      }
+  
+      #corpo{
+          width: 90%;
+          font-size: 3.7vw;
+          line-height: 25px;
+      }
+  
+      .wrap1{
+        margin: 0;
+      }
+  
+      #titulo{
+        font-size: 6vw;
+        padding-top: 30px;
+      }
+  
+      .serviços{
+        width: 450px;
+      }
+  
+      .box{
+        background: rgb(0, 0, 0);
+        width: 450px;
+        height: 300px;
+      }
+  
+      .line5{
+        margin-left: -280px;
+        margin-top: -235px;
+      }
+  }
+  
+  @media (max-width: 480px){
+    .logo{
+      width: 100%;
+      height: 80%;
+      margin-left: -190px;
+      margin-top: -70px;
+    }
+  
+    .fa, .wrap{
+      margin: 0;
+      font-size: 20px;
+      width: 20px;
+      padding: 10px;
+    }
+  
+    #menu{
+      margin-top: 138px;
+    }
+  
+    #btn-mobile {
+      margin-top: -10px;
+      margin-right: 70px;
+    }
+  
+    .wrap{
+      width: 1000px;
+      margin-top: -10px;
+    }
+  
+    a{
+      font-size: 4.2vw;
+    }
+  
+    h1{
+        width: 95%;
+        font-size: 5.9vw;
+    }
+  
+    #corpo{
+        width: 90%;
+        font-size: 3.7vw;
+        line-height: 25px;
+    }
+  }
+  
+  @media (max-width: 280px){
+    .logo{
+      width: 94%;
+      height: 50%;
+      margin-left: -130px;
+      margin-top: -40px;
+    }
+    .fa, .wrap{
+      margin: 0;
+      font-size: 20px;
+      width: 15px;
+      padding: 8px;
+    }
+  
+    #menu{
+      margin-top: 135px;
+    }
+  
+    #btn-mobile {
+      margin-top: -10px;
+      margin-right: 30px;
+    }
+  
+    .wrap{
+      width: 1000px;
+      margin-top: -10px;
+    }
+  
+    a{
+      font-size: 5vw;
+    }
+  
+    h1{
+        width: 95%;
+        font-size: 6vw;
+    }
+  
+    #page1{
+      margin-top: 10px;
+    }
+  
+    #corpo{
+        width: 95%;
+        font-size: 4.5vw;
+        line-height: 15px;
+        letter-spacing: 1px;
+    }
+  
+    #titulo{
+      font-size: 10vw;
+      padding-top: 30px;
+    }
+  
+    .serviços{
+      width: 270px;
+      height: 170px;
+    }
+  
+    .box{
+      width: 270px;
+      height: 240px;
+    }
+  
+    .line5{
+      margin-left: -190px;
+      margin-top: -190px;
+    }
+  
+    .box > p{
+      font-size: 15px;
+    }
+  
+    .info{
+      padding-top: 40px;
+    }
+  }

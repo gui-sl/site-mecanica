@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="faviconG3.png" type="image/x-icon">
+    <style>
+*{
+  scroll-behavior: smooth ;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #000;
+}
+body,ul {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.line4{
+    width: 100%;
+    height: 160px;
+    background: black;
+    position: relative;
+}
+
+.logo {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: -65px;
+  }
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+nav {
+  height: 30px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background: #e7e7e7;
+  margin-bottom: -30px;
+  justify-content: space-evenly;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+  margin-right: 100px;
+}
+
+.fa, .wrap {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 25px;
+    font-size: 20px;
+  }
+
+.fa-facebook, .fa-instagram, .fa-whatsapp, .fa-whatsapp, .fa-twitter {
+    background: #000;
+    color: white;
+  }
+
+.fa-facebook:hover {
+    background: #3b5998;
+    color: #ffffff;
+  }
+
+.fa-instagram:hover {
+    background: linear-gradient( 45deg, #FEDA77, #F58529, #DD2A7B, #8134AF, #515BD4);
+    color: white;
+    }
+
+.fa-whatsapp:hover {
+    background: #34af23;
+    color: white;
+  }
+
+.fa-twitter:hover {
+    background: #00acee;
+    color: white;
+  }
+  .wrap{
+    width: 200px;
+    height: 40px;
+    cursor: default;
+  }
+  h1{
+      font-size: 3vw;
+      color: #e7e7e7;
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      padding-top: 70px;
+      padding-bottom: 50px;
+  }
+  .container{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+  }
+  .box{
+      width: 45%;
+      height: 100vh;
+      background-color: #000000;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 35px;
+  }
+
+  .box1{
+      width: 45%;
+      height: 100vh;
+      background-color: #000000;
+  }
+  input{
+      width: 90%;
+      height: 40px;
+      margin: 10px;
+      font-size: 15px;
+  }
+
+  input::placeholder{
+      padding-left: 10px;
+  }
+  
+  textarea, select{
+    width: 90%;
+    height: 40px;
+    margin: 10px;
+  }
+  textarea{
+      resize: none;
+      height: 150px;
+  }
+  @media (max-width: 992px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+    margin-top: 145px;
+  }
+  nav{
+    justify-content: space-between;
+  }
+
+  #nav.active #menu {
+    height: 250px;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 2rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 30px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+@media (max-width:600px){
+    .box1{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+}
+    </style>
+    <title>G3-AGENDAMENTO</title>
+</head>
+<body>
+    <div class="line4">
+        <img class="logo" src="TESTE3.jpg" alt="">
+    </div>
+    <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">SOBRE</a></li>
+            <li><a href="index.html">CLIENTES</a></li>
+            <li><a href="index.html">SERVIÇOS</a></li>
+            <li><a href="G3-AGENDAMENTO.html">AGENDAMENTO</a></li>
+            <li><a href="G3-GESTÃO DE FROTAS.html" target="_blank">GESTÃO DE FROTAS</a></li>
+        </ul>
+        <div class="wrap">
+            <a href="https://www.facebook.com/Croco-Autocenter-106247345424303" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com/croco_autocenter/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://api.whatsapp.com/send?phone=5511988193371&text=Oi%20lindo" class="fa fa-whatsapp" target="_blank"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+    </nav>
+</header>
+<section>
+    <h1>AGENDAMENTO</h1>
+    <div class="container">
+        <div class="box">
+            <p><strong>TELEFONE:</strong>11 45612223 | 11 953481539 | 11 988193371</p>
+            <br>
+			      <p><strong>EMAIL:</strong>atendimento@G3.com.br</p>
+            <br>
+			      <p><strong>AGENDAMENTO ONLINE</strong></p>
+		      	<p>Com no mínimo 02 dias úteis de antecedência Descrever o serviço que deseja realizar Indicar ano, modelo,  Marca e Km do veículo
+		      	</p>
+            <br>
+		      	<p><strong>HORÁRIO DE FUNCCIONAMENTO</strong></p>
+		      	<p>Segunda-feira a sexta-feira: 08:00 ás 18:00hs</p>
+            <p>Sábado: 08:00 ás 13:00hs</p>
+        </div>
+
+        <div class="box1">
+            <form id="formulario" name="formulario" method="post" action="mailto:guilherme.souza5420@gmail.com" enctype="text/plain">
+                <input type="text" name="NOME" placeholder="NOME" id="txtnome">
+                <input type="email" name="EMAIL" placeholder="EMAIL">
+                <input type="tel" name="numero" placeholder="NÚMERO">
+                <input type="text" name="veiculo/marca" placeholder="VEÍCULO/MARCA/ANO/KM">
+                <select name="service">
+                    <option value="MECÂNICA EM GERAL">MECÂNICA EM GERAL</option>
+                    <option value="SUSPENSÃO">SUSPENSÃO</option>
+                    <option value="FREIOS">FREIOS</option>
+                    <option value="INJEÇÃO ELETRONICA">INJEÇÃO ELETRONICA</option>
+                    <option value="ELÉTRICA">ELÉTRICA</option>
+                    <option value="LANTERNAGEM">LANTERNAGEM</option>
+                    <option value="FUNILARIA E PINTURA">FUNILARIA E PINTURA</option>
+                    <option value="HIGIENIZAÇÃO">HIGIENIZAÇÃO</option>
+                </select>
+                <input type="datetime-local" name="DATA E HORA">
+                <textarea name="DETALHES" id="" cols="30" rows="10" placeholder="Detalhe o que deseja realizar"></textarea>
+                <input type="submit" value="Enviar" onClick="Envio()" />
+            </form>
+        </div>
+    </div>
+</section>
+<script>
+    const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+if (event.type === 'touchstart') event.preventDefault();
+const nav = document.getElementById('nav');
+nav.classList.toggle('active');
+const active = nav.classList.contains('active');
+event.currentTarget.setAttribute('aria-expanded', active);
+if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+} else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+}
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
+</body>
+</html>
